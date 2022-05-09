@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+body{
+    font-family: 'Outfit', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background: hsl(217, 54%, 11%) ;
+}
+.container{
+    background: hsl(216, 50%, 16%);
+    width: 19rem;
+    padding: 24px;
+    border-radius: 16px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;  
+}
+.card-img{
+    position: relative;
+    width: 100%;
+}
+.image{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color:  hsl(178, 100%, 50%);
+}
+
+.card-img:hover .overlay {
+    opacity: 50%;
+}
+.view {
+    cursor: pointer;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.card-title{
+    color: hsl(0, 0%, 100%);
+    font-weight: 200;
+}
+.card-title:hover{
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+    color: hsl(178, 100%, 50%) ;
+}
+.card-content p{
+    font-size: 16px;
+    color:  hsl(215, 51%, 70%);
+    font-weight: 200;
+}
+.card-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.para1-img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+.para1{
+    font-size: 14px;
+    font-weight: 600;
+    color: hsl(178, 100%, 50%);
+}
+.para2-img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+.para2{
+    font-size: 14px;
+    color:  hsl(215, 51%, 70%) ;
+}
+.line1{
+    color:  hsl(215, 51%, 70%) ;
+    height: 1px;
+    width: 100%;
+}
+.author-img{
+    border: 1px solid white;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+}
+.author{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color:  hsl(215, 51%, 70%) ;
+}
+.name a{
+    color: white;
+    text-decoration: none;
+}
+.name a:hover{
+    color: hsl(178, 100%, 50%);
+    transition: all 0.5s ease-in;
+}
+
+
+
