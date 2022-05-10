@@ -16,7 +16,7 @@ body{
 }
 .container{
     background: hsl(216, 50%, 16%);
-    width: 19rem;
+    width: 21rem;
     padding: 24px;
     border-radius: 16px;
 }
@@ -33,6 +33,7 @@ body{
     display: block;
     width: 100%;
     height: auto;
+    border-radius: 16px;
 }
 .overlay {
     position: absolute;
@@ -130,6 +131,7 @@ body{
     color: hsl(178, 100%, 50%);
     transition: all 0.5s ease-in;
 }
+
 
 
 
